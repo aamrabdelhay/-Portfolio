@@ -12,7 +12,7 @@
     "linkedin": "https://www.linkedin.com/in/amrabdelhay",
     "linkedinLabel": "Amr Abd El-Hay",
     "whatsappNumber": "https://wa.me/201153909979",
-    "photo": ""
+    "photo": "./images/profile/image.jpg"
   },
   "achievements": [
     {
@@ -22,7 +22,7 @@
       "role": "Mooter",
       "dates": "July 2026 – Present",
       "summary": "Participating in the first edition of the Environmental Law Moot Court Competition. Conducting legal research and developing legal writing and oral advocacy skills in English through a simulated environmental law dispute.",
-      "image": "./images/court.jpg",
+      "image": "./images/achievements/env-moot-2026/image.jpg",
       "order": 1
     },
     {
@@ -32,7 +32,7 @@
       "role": "Legal Trainee",
       "dates": "August 2026 – September 2026",
       "summary": "Completed practical legal training and gained exposure to legal research and professional legal practice.",
-      "image": "./images/office.jpg",
+      "image": "./images/achievements/hossam-trainee-2026/image.jpg",
       "order": 2
     },
     {
@@ -42,7 +42,7 @@
       "role": "Mooter",
       "dates": "April 2026 – July 2026",
       "summary": "Drafted legal memoranda and conducted advanced legal research in international human rights law. Prepared oral arguments and participated in simulated judicial proceedings before a moot court panel.",
-      "image": "./images/advocacy.jpg",
+      "image": "./images/achievements/ahr-moot-2026/image.jpg",
       "order": 3
     },
     {
@@ -52,7 +52,7 @@
       "role": "Coach",
       "dates": "March 2026 – July 2026",
       "summary": "Directed all training and preparation phases for the competitive team. Provided expert guidance on legal argumentation and oral advocacy.",
-      "image": "./images/coaching.jpg",
+      "image": "./images/achievements/ip-moot-3-2026/image.jpg",
       "order": 4
     },
     {
@@ -62,7 +62,7 @@
       "role": "Coach",
       "dates": "February 2026 – August 2026",
       "summary": "Led student preparation regarding legal research, memo writing, and oral advocacy.",
-      "image": "./images/research.jpg",
+      "image": "./images/achievements/slm-2026/image.jpg",
       "order": 5
     },
     {
@@ -72,7 +72,7 @@
       "role": "Executive Office Member",
       "dates": "December 2025 – Present",
       "summary": "Contributed to strategic planning and the coordination of council initiatives. Supported executive operations and event organization.",
-      "image": "./images/office.jpg",
+      "image": "./images/achievements/alc-exec-2025/image.jpg",
       "order": 6
     },
     {
@@ -82,7 +82,7 @@
       "role": "Mooter",
       "dates": "August 2025 – February 2026",
       "summary": "Selected to represent Capital University in the international arbitration moot organized by the Saudi Center for Commercial Arbitration.",
-      "image": "./images/court.jpg",
+      "image": "./images/achievements/siam7/image.jpg",
       "order": 7
     },
     {
@@ -92,7 +92,7 @@
       "role": "Coach",
       "dates": "July 2025 – August 2025",
       "summary": "Managed training and preparation programs for two teams. Provided comprehensive guidance on legal argumentation and oral advocacy techniques.",
-      "image": "./images/coaching.jpg",
+      "image": "./images/achievements/ip-moot-2-2025/image.jpg",
       "order": 8
     },
     {
@@ -102,7 +102,7 @@
       "role": "Human Resources Specialist",
       "dates": "April 2025 – December 2025",
       "summary": "Managed recruitment processes and member engagement activities. Assisted in developing HR strategies to optimize team performance.",
-      "image": "./images/research.jpg",
+      "image": "./images/achievements/alc-hr-2025/image.jpg",
       "order": 9
     },
     {
@@ -112,7 +112,7 @@
       "role": "Mooter",
       "dates": "August 2024 – January 2025",
       "summary": "Developed advanced advocacy, legal research, and arbitral procedure skills through simulated dispute resolution.",
-      "image": "./images/advocacy.jpg",
+      "image": "./images/achievements/siam6/image.jpg",
       "order": 10
     },
     {
@@ -122,7 +122,7 @@
       "role": "Legal Intern",
       "dates": "August 2024 – September 2024",
       "summary": "Conducted in-depth legal research to support case strategies. Assisted in the management of various criminal cases. Reviewed and drafted commercial sales contracts.",
-      "image": "./images/office.jpg",
+      "image": "./images/achievements/elkhayat-2024/image.jpg",
       "order": 11
     },
     {
@@ -132,7 +132,7 @@
       "role": "Honorary Member",
       "dates": "August 2026 – Present",
       "summary": "Honorary membership recognizing contribution to intellectual property mooting and academic community.",
-      "image": "./images/advocacy.jpg",
+      "image": "./images/achievements/sipa-2026/image.jpg",
       "order": 12
     }
   ],
