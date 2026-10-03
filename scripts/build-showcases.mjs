@@ -106,18 +106,41 @@ for (const [id, url] of Object.entries(repos)) clone(url, path.join(tmp, id));
 }
 
 // MO is private, so GitHub Pages cannot read it with its normal GITHUB_TOKEN.
-// When MO_READ_TOKEN exists, build directly from the real private repo.
-// Otherwise preserve the already-tracked static source snapshot.
-if (process.env.MO_READ_TOKEN) {
-  const moDir = path.join(tmp, "mo");
-  run("git", ["clone", "--depth", "1", "https://x-access-token:" + process.env.MO_READ_TOKEN + "@github.com/aamrabdelhay/mo.git", moDir], root);
-  run("npm", ["ci"], moDir);
-  run("npm", ["run", "build", "--", "--base", "./"], moDir);
-  await cp(path.join(moDir, "dist"), path.join(root, "previews/mo"));
-  const index = path.join(root, "previews/mo/index.html");
-  if (existsSync(index)) lockHtml(index);
-} else {
-  console.log("[showcase] MO_READ_TOKEN is not configured; keeping the tracked MO showcase snapshot.");
+// The original frontend source is vendored under sources/mo. When MO_READ_TOKEN
+// exists, refresh from the private repo; otherwise build the vendored source.
+// Reuse the existing static API fixture so the source-built UI remains a safe
+// scroll-only demo with no connection to the real backend.
+{
+  const existing = path.join(root, "previews/mo/index.html");
+  let fixtureScript = "";
+  if (existsSync(existing)) {
+    const current = readFileSync(existing, "utf8");
+    const match = current.match(/<script>([\\s\\S]*?)<\\/script>/);
+    if (match) fixtureScript = match[1];
+  }
+
+  let moDir = path.join(root, "sources/mo");
+  if (process.env.MO_READ_TOKEN) {
+    moDir = path.join(tmp, "mo");
+    run("git", ["clone", "--depth", "1", "https://x-access-token:" + process.env.MO_READ_TOKEN + "@github.com/aamrabdelhay/mo.git", moDir], root);
+  }
+
+  if (existsSync(path.join(moDir, "package.json"))) {
+    run("npm", ["ci"], moDir);
+    run("npm", ["run", "build", "--", "--base", "./"], moDir);
+    await cp(path.join(moDir, "dist"), path.join(root, "previews/mo"));
+    const index = path.join(root, "previews/mo/index.html");
+    if (existsSync(index)) {
+      let html = readFileSync(index, "utf8");
+      if (fixtureScript) html = html.replace("</head>", "<script>" + fixtureScript + "</script></head>");
+      writeFileSync(index, html, "utf8");
+      lockHtml(index);
+    }
+  } else {
+    console.log("[showcase] Vendored MO source is missing; keeping the tracked snapshot.");
+    const index = path.join(root, "previews/mo/index.html");
+    if (existsSync(index)) lockHtml(index);
+  }
 }
 
 // Never publish the temporary source checkouts.
