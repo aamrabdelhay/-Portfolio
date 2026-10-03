@@ -172,15 +172,27 @@
     if (!el || !DATA) return;
     const projects = DATA.projects || [];
     el.innerHTML = projects.map((p) => {
-      const href = p.embed || p.preview || "#";
+      const href = p.liveUrl || p.embed || p.preview || "#";
       return `
       <article class="work-card">
         <div class="screen">
           <div class="screen-bar">
             <i></i><i></i><i></i>
-            <span>${escapeHtml(p.name)}</span>
+            <span>${escapeHtml(p.name)} · LIVE · VIEW ONLY</span>
           </div>
-          <iframe src="${escapeHtml(href)}" title="${escapeHtml(p.name)}" loading="lazy"></iframe>
+          <div class="screen-viewport">
+            <iframe
+              class="showcase-iframe"
+              src="${escapeHtml(href)}"
+              title="${escapeHtml(p.name)}"
+              loading="lazy"
+              scrolling="yes"
+              sandbox="allow-scripts allow-same-origin"
+              referrerpolicy="no-referrer"
+              tabindex="-1">
+            </iframe>
+            <div class="screen-note">VIEW ONLY · SCROLL</div>
+          </div>
         </div>
         <div class="work-copy">
           <div class="kind">${escapeHtml(p.kind)} · ${escapeHtml(p.year)}</div>
@@ -188,12 +200,11 @@
           <div class="ar">${escapeHtml(p.nameAr || "")}</div>
           <p>${escapeHtml(p.summary)}</p>
           <div class="tags">${(p.stack || []).map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join("")}</div>
-          <a class="btn" href="${escapeHtml(href)}" target="_blank" rel="noopener">Open full site</a>
+          <span class="btn ghost">Live project · scroll only</span>
         </div>
       </article>`;
     }).join("");
   }
-
   function formatPhone(p) {
     const d = String(p || "").replace(/\D/g, "");
     if (d.length === 11) return d.replace(/(\d{3})(\d{4})(\d{4})/, "$1 $2 $3");
