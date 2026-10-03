@@ -76,20 +76,16 @@
 
   function bindReveals() {
     if (!hasGsap) return;
-    gsap.utils.toArray("[data-reveal]").forEach((el) => {
-      gsap.fromTo(el, { opacity: 0, y: 40 }, {
-        opacity: 1, y: 0, duration: 0.95, ease: "power3.out",
-        scrollTrigger: { trigger: el, start: "top 90%" }
-      });
+    gsap.utils.toArray("[data-reveal]").forEach((el,i) => {
+      const fromX = i % 2 === 0 ? -80 : 80;
+      gsap.fromTo(el,{opacity:0,x:fromX,y:18},{opacity:1,x:0,y:0,duration:1.05,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 88%",once:true}});
     });
   }
   function fadeList(selector) {
     if (!hasGsap) return;
-    gsap.utils.toArray(selector).forEach((el, i) => {
-      gsap.fromTo(el, { opacity: 0, y: 48 }, {
-        opacity: 1, y: 0, duration: 0.9, delay: (i % 4) * 0.05, ease: "power3.out",
-        scrollTrigger: { trigger: el, start: "top 92%" }
-      });
+    gsap.utils.toArray(selector).forEach((el,i) => {
+      const fromX = i % 2 === 0 ? -90 : 90;
+      gsap.fromTo(el,{opacity:0,x:fromX,y:22},{opacity:1,x:0,y:0,duration:1,delay:(i%4)*.06,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 90%",once:true}});
     });
   }
 
@@ -100,7 +96,7 @@
     safa: "./sites/safa/",
     mo: "./previews/mo/"
   };
-  const PREVIEW_BUILD = "20261003-STATIC-2";
+  const PREVIEW_BUILD = "20261003-STYLE-1";
 
   let DATA = null;
   let activeFilter = "All";
