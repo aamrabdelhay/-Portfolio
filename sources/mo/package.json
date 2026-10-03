@@ -1,0 +1,33 @@
+{
+  "name": "capital-military-visits",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite --host 0.0.0.0\" \"node --watch server/index.js\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node --test server/*.test.js",
+    "test:json": "node --test server/validation.test.js server/workflow.test.js",
+    "test:pg": "node --test server/workflow.pg.test.js"
+  },
+  "dependencies": {
+    "@vercel/blob": "^1.1.1",
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "latest",
+    "dotenv": "^17.4.2",
+    "exceljs": "^4.4.0",
+    "express": "latest",
+    "jsonwebtoken": "latest",
+    "lucide-react": "latest",
+    "multer": "latest",
+    "pg": "^8.23.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.2.17"
+  }
+}
