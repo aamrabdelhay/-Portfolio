@@ -114,10 +114,10 @@ for (const [id, url] of Object.entries(repos)) clone(url, path.join(tmp, id));
   const existing = path.join(root, "previews/mo/index.html");
   let fixtureScript = "";
   if (existsSync(existing)) {
+    const current = readFileSync(existing, "utf8");
     const open = current.indexOf("<script>");
     const close = open >= 0 ? current.indexOf("</script>", open + 8) : -1;
     if (open >= 0 && close > open) fixtureScript = current.slice(open + 8, close);
-    if (match) fixtureScript = match[1];
   }
 
   let moDir = path.join(root, "sources/mo");
