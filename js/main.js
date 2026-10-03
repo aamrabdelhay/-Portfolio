@@ -93,6 +93,15 @@
     });
   }
 
+  const LIVE_PREVIEW_URLS = {
+    elsharaby: "https://elsharaby-law.vercel.app/",
+    hossam: "https://dr-hossam-lotfy-hw88.vercel.app/",
+    loutfi: "https://loutfifirm.vercel.app/",
+    safa: "https://safa-rosy.vercel.app/",
+    mo: "https://militaryvisitscu.com/"
+  };
+  const PREVIEW_BUILD = "20261003-3";
+
   let DATA = null;
   let activeFilter = "All";
 
@@ -172,13 +181,13 @@
     if (!el || !DATA) return;
     const projects = DATA.projects || [];
     el.innerHTML = projects.map((p) => {
-      const href = p.liveUrl || p.embed || p.preview || "#";
+      const href = LIVE_PREVIEW_URLS[p.id] || p.liveUrl || p.embed || p.preview || "#";
       return `
       <article class="work-card">
         <div class="screen">
           <div class="screen-bar">
             <i></i><i></i><i></i>
-            <span>${escapeHtml(p.name)} · LIVE · VIEW ONLY</span>
+            <span>${escapeHtml(p.name)} · LIVE · SCROLL ONLY</span>
           </div>
           <div class="screen-viewport">
             <iframe
@@ -191,7 +200,7 @@
               referrerpolicy="no-referrer"
               tabindex="-1">
             </iframe>
-            <div class="screen-note">VIEW ONLY · SCROLL</div>
+            <div class="screen-note">LIVE SITE · SCROLL ONLY</div>
           </div>
         </div>
         <div class="work-copy">
@@ -200,7 +209,7 @@
           <div class="ar">${escapeHtml(p.nameAr || "")}</div>
           <p>${escapeHtml(p.summary)}</p>
           <div class="tags">${(p.stack || []).map((t) => `<span class="tag">${escapeHtml(t)}</span>`).join("")}</div>
-          <span class="btn ghost">Live project · scroll only</span>
+          <span class="btn ghost">Live site · scroll only</span>
         </div>
       </article>`;
     }).join("");
@@ -247,7 +256,7 @@
 
   fetch("/api/content")
     .then((r) => { if (!r.ok) throw new Error("API unavailable"); return r.json(); })
-    .catch(() => fetch("./data/content.json").then((r) => r.json()))
+    .catch(() => fetch("./data/content.json?v="+PREVIEW_BUILD).then((r) => r.json()))
     .then((data) => {
       DATA = data;
       renderPortrait();
