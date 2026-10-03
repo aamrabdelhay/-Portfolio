@@ -1,10 +1,10 @@
 :root {
-  --navy: #3f4145;
-  --navy-2: #4a4c50;
-  --navy-3: #56585d;
-  --gold: #39ff88;
-  --gold-2: #25d978;
-  --gold-soft: #c9ffd9;
+  --navy: #242629;
+  --navy-2: #1d1f22;
+  --navy-3: #303236;
+  --gold: #18a95c;
+  --gold-2: #0e7f43;
+  --gold-soft: #b7e8ca;
   --ivory: #ffffff;
   --paper: #e7e8ea;
   --ink: #151619;
@@ -43,7 +43,7 @@ button { font-family: inherit; cursor: none; }
   transform: translate(-50%, -50%); mix-blend-mode: difference;
   transition: width .25s var(--ease), height .25s var(--ease), background .25s;
 }
-.cursor.is-hover { width: 64px; height: 64px; background: rgba(57,255,136,.12); }
+.cursor.is-hover { width: 64px; height: 64px; background: rgba(24,169,92,.12); }
 .cursor-dot {
   position: fixed; width: 5px; height: 5px; background: var(--gold);
   border-radius: 50%; pointer-events: none; z-index: 10001;
@@ -97,7 +97,7 @@ button { font-family: inherit; cursor: none; }
 }
 .burger span { display: block; height: 1px; background: var(--gold); width: 100%; }
 .nav-sheet {
-  display: none; position: fixed; inset: 0; background: rgba(25,27,29,.96); z-index: 90;
+  display: none; position: fixed; inset: 0; background: rgba(10,12,14,.96); z-index: 90;
   flex-direction: column; justify-content: center; align-items: center; gap: 28px;
 }
 .nav-sheet a { font-family: var(--serif); font-size: 32px; color: var(--ivory); }
@@ -110,7 +110,7 @@ button { font-family: inherit; cursor: none; }
 }
 .hero-bg {
   position: absolute; inset: 0; background:
-    linear-gradient(180deg, rgba(25,27,29,.35) 0%, rgba(25,27,29,.55) 45%, rgba(25,27,29,.96) 100%),
+    linear-gradient(180deg, rgba(10,12,14,.48) 0%, rgba(10,12,14,.68) 45%, rgba(25,27,29,.96) 100%),
     url("/images/hero.jpg") center/cover no-repeat;
   transform: scale(1.08); will-change: transform;
 }
@@ -189,7 +189,7 @@ button { font-family: inherit; cursor: none; }
 .about-photo img { width: 100%; height: 100%; object-fit: cover; min-height: 420px; filter: saturate(.85); }
 .about-photo::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(25,27,29,.75));
+  background: linear-gradient(180deg, transparent 40%, rgba(10,12,14,.78));
 }
 
 .portrait {
@@ -299,7 +299,7 @@ button { font-family: inherit; cursor: none; }
   padding: 5px 9px;
   border: 1px solid rgba(255,255,255,.18);
   border-radius: 999px;
-  background: rgba(25,27,29,.78);
+  background: rgba(10,12,14,.82);
   color: #f6f1e6;
   font-size: 9px;
   letter-spacing: .12em;
@@ -401,7 +401,7 @@ footer .key-btn { opacity: .28; }
 
 
 /* Final visual direction */
-body{background:linear-gradient(180deg,#3f4145 0%,#34363a 100%);color:#fff}
+body{background:linear-gradient(180deg,#242629 0%,#111315 100%);color:#fff}
 .hero-bg{filter:grayscale(.78) contrast(1.08)}
 .screen{background:#252629;border-color:rgba(255,255,255,.18);box-shadow:0 30px 70px -35px rgba(0,0,0,.65)}
 .btn{color:#111}.btn:hover{box-shadow:0 18px 40px -18px rgba(57,255,136,.38)}
