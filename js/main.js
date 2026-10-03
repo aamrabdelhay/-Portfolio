@@ -90,13 +90,13 @@
   }
 
   const PREVIEW_URLS = {
-    elsharaby: "./sites/elsharaby/",
-    hossam: "./previews/hossam/",
-    loutfi: "./previews/loutfi/",
-    safa: "./sites/safa/",
+    elsharaby: "./previews/elsharaby/index.html",
+    hossam: "./previews/hossam/index.html",
+    loutfi: "./previews/loutfi/index.html",
+    safa: "./previews/safa/index.html",
     mo: "./previews/mo/"
   };
-  const PREVIEW_BUILD = "20261003-STYLE-1";
+  const PREVIEW_BUILD = "20261003-STYLE-2";
 
   let DATA = null;
   let activeFilter = "All";
