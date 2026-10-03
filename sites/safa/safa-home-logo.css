@@ -1,0 +1,17 @@
+/* SAFA homepage logo — the controllable hero logo is the only visible logo image. */
+.header .brand img{display:none!important}
+.hero-logo-control{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:none!important;padding:0!important;mix-blend-mode:normal!important;outline:0!important}
+.hero{min-height:760px;padding:140px 10vw 90px;position:relative;overflow:hidden;color:#211f1b;background:linear-gradient(110deg,#f7f3e9,#eee6d6)}
+.hero-copy{position:relative;z-index:1;width:min(900px,100%);max-width:900px;text-align:center;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;align-items:center}
+.hero-copy::before{display:none!important;content:none!important}
+.hero-copy .hero-logo-control{max-width:80vw!important;max-height:none!important;height:auto!important;object-fit:contain!important;object-position:center!important;margin:0 auto 28px!important}
+.hero-copy .hero-logo{display:none!important}
+.hero .eyebrow{color:#8b7751}
+.hero h1{font:500 100px/0.82 'Cormorant Garamond';color:#211f1b;text-shadow:none;text-align:center}
+.hero h1 i{color:#b8860b}
+.hero .lead{color:#6f6a60;text-align:center}
+.hero .goldbtn{background:#b8860b;border-color:#b8860b;box-shadow:none}
+.hero .goldbtn:hover{background:#211f1b;color:#fff}
+.footer-brand .brand,.footer-brand b,footer .brand b{background:linear-gradient(100deg,#B69665 0%,#D2B274 50%,#B69665 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.brand b{background:linear-gradient(100deg,#B69665 0%,#D2B274 50%,#B69665 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+@media(max-width:700px){.hero{min-height:700px;padding:115px 8vw 50px}.hero-copy .hero-logo-control{max-width:82vw!important;margin-bottom:22px!important}.hero h1{font-size:78px;margin:26px 0;text-align:center}.hero .lead{text-align:center;margin-bottom:30px}}

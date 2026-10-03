@@ -1,0 +1,18 @@
+/* SAFA final runtime overrides — loaded last */
+.header-search{min-width:24px!important;max-width:24px!important;width:24px!important;flex:0 0 24px!important;display:flex!important;align-items:center!important;justify-content:center!important;border:0!important;border-bottom:0!important;padding:0!important;background:transparent!important;box-shadow:none!important}
+.header-search span{display:inline-block!important;font-size:20px!important;line-height:1!important}
+.header-search input{display:none!important}
+.header .actions{position:static!important}
+.header .keybutton{position:static!important;inset:auto!important;transform:none!important}
+.add-logo{display:none!important}
+.safa-categories-admin{width:100%!important}
+.safa-categories-admin button{font:inherit;cursor:pointer}
+.category-admin-list h3{font-family:'Cormorant Garamond',Georgia,serif}
+footer.footer{position:static!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;text-align:center!important}
+footer.footer .footer-brand,footer.footer .socials,footer.footer .credit{width:100%!important}
+footer.footer .socials{display:flex!important;justify-content:center!important;align-items:center!important;flex-wrap:wrap!important}
+@media(max-width:700px){
+  .header-search{width:24px!important;min-width:24px!important;max-width:24px!important}
+  .header-search input{display:none!important}
+  .safa-categories-admin{padding-bottom:30px!important}
+}

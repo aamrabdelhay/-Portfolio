@@ -1,0 +1,10 @@
+#product-page-root:not(.product-page-root){display:none!important}
+body.safa-admin-route .header,body.safa-admin-route footer{display:none!important}
+body.safa-admin-route .admin-clean{min-height:100dvh;padding-top:max(28px,env(safe-area-inset-top));padding-bottom:max(40px,env(safe-area-inset-bottom));overflow-x:hidden}
+.header-search span{cursor:pointer;user-select:none}.header-search span:focus{outline:1px solid #b8860b;outline-offset:4px}
+.hero{background:#fffdf8!important}
+.hero-logo{display:block;width:min(330px,58vw);max-height:220px;height:auto;object-fit:contain;margin:0 auto 28px;border:0!important;border-radius:0!important;background:#fffdf8!important;box-shadow:none!important;padding:0!important;mix-blend-mode:multiply!important;filter:drop-shadow(0 8px 18px rgba(33,31,27,.05))}
+.admin-clean .order-card-head>*{min-width:0}.admin-clean .order-card-head select{max-width:100%;min-width:0}.admin-clean .order-card,.admin-clean .panel,.admin-clean .category-row{max-width:100%;overflow-wrap:anywhere}
+/* Prevent the original header/footer from flashing before the Pro homepage layer activates. */
+body:has(.hero):not(.pro-home-active):not(.safa-admin-route) .header,body:has(.hero):not(.pro-home-active):not(.safa-admin-route) footer{visibility:hidden!important}
+@media(max-width:700px){.hero{min-height:calc(100svh - 118px)!important;padding:120px 20px 50px!important}.hero-logo{width:min(270px,72vw);max-height:180px;margin-bottom:22px}body.safa-admin-route .admin-clean{padding-left:16px;padding-right:16px}.admin-clean .order-card-head{grid-template-columns:1fr!important}.admin-clean .admin-title,.admin-clean .orderhead,.admin-clean .adminbar{width:100%;min-width:0}.admin-clean .order-card-head strong,.admin-clean .order-card-head b,.admin-clean .order-card-head small{overflow-wrap:anywhere}}

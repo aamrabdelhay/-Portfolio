@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مكتب لطفي للمحاماة — معاينة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing:border-box; margin:0; }
+    body { font-family: Tajawal, sans-serif; background:#f4f1ea; color:#1a1a1a; }
+    header { display:flex; justify-content:space-between; padding: 20px 40px; border-bottom:1px solid #ddd6c8; background:#f4f1ea; position:sticky; top:0; }
+    .logo { font-family: Amiri, serif; font-size: 26px; }
+    nav a { text-decoration:none; color:#1a1a1a; margin-right:18px; font-size:14px; }
+    .hero { padding: 90px 48px 70px; max-width: 900px; }
+    h1 { font-family: Amiri, serif; font-size: clamp(36px, 6vw, 68px); line-height:1.25; font-weight:700; }
+    .hero p { margin: 20px 0 32px; font-size:18px; line-height:1.9; color:#444; max-width:560px; }
+    .btn { border:1px solid #1a1a1a; padding:12px 24px; text-decoration:none; color:#1a1a1a; letter-spacing:.08em; }
+    .split { display:grid; grid-template-columns:1fr 1fr; }
+    .block { padding:48px; min-height: 240px; }
+    .block.dark { background:#1a1a1a; color:#f4f1ea; }
+    .block h3 { font-family: Amiri, serif; font-size:28px; margin-bottom:12px; }
+    .block p { line-height:1.85; color:inherit; opacity:.8; }
+    footer { padding:28px 40px; font-size:12px; color:#777; letter-spacing:.12em; }
+    @media(max-width:800px){ .split{grid-template-columns:1fr} nav{display:none} .hero{padding:60px 24px} }
+  </style>
+</head>
+<body>
+  <div dir="ltr" style="position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:10px 18px;background:#070b14;color:#f6f1e6;font:12px/1.4 Tajawal,sans-serif;letter-spacing:.08em">
+    <a href="/#work" style="color:#d4af51;text-decoration:none">← Back to portfolio</a>
+    <span style="color:#d4af51">VIEW-ONLY COPY</span>
+  </div>
+  <header>
+    <div class="logo">مكتب لطفي</div>
+    <nav>
+      <a href="#">عن المكتب</a>
+      <a href="#">الخدمات</a>
+      <a href="#">الأكاديميا</a>
+      <a href="#">المقالات</a>
+      <a href="#">تواصل</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>مكتب لطفي للمحاماة<br>حيث يُكتب القانون بهدوء.</h1>
+    <p>موقع عربي بهوية حبر وفحم: خدمات، أكاديميا، مقالات، تدريب، ومواعيد — مع لوحة إدارة كاملة للمحتوى.</p>
+    <a class="btn" href="#">طلب استشارة</a>
+  </section>
+  <section class="split">
+    <div class="block dark">
+      <h3>الأكاديميا</h3>
+      <p>كتب، محاضرات، ومسار تدريبي للطلاب والباحثين، يُدار من الاستوديو الداخلي للمكتب.</p>
+    </div>
+    <div class="block">
+      <h3>المقالات والإعلام</h3>
+      <p>أرشيف رأي ومقاطع، يُنشر بالعربية ويُترجم عند الحاجة دون أن يفقد الاسم صيغته.</p>
+    </div>
+  </section>
+  <footer>نسخة للعرض فقط · LOUTFI LAW FIRM · ليست الموقع الحي</footer>
+</body>
+</html>

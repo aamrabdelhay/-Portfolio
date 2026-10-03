@@ -1,0 +1,29 @@
+/* SAFA unified UI fixes — scoped to preserve existing product/admin behavior. */
+:root{--safa-gold:#b8860b;--safa-gold-border:#d8c08a;--safa-ink:#211f1b;--safa-cream:#faf8f2}
+button,.header nav a{border:1px solid var(--safa-gold)!important;border-radius:999px!important;background:transparent!important;color:var(--safa-ink)!important;box-shadow:none!important;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease!important}
+button:hover,.header nav a:hover{background:#f0d98c!important;border-color:var(--safa-gold)!important;color:var(--safa-ink)!important}
+button:disabled{opacity:.6}
+.header nav a{padding:9px 15px!important}
+.header .brand b{background:linear-gradient(100deg,#B69665 0%,#D2B274 50%,#B69665 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent!important}
+.loading-state{display:none!important}
+/* Product-page navigation must remain a pill, not inherit the legacy square rule. */
+#product-page-root .pp-back{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:9px 16px!important;border:1px solid var(--safa-gold)!important;border-radius:999px!important;background:transparent!important;color:var(--safa-ink)!important;font-size:10px;letter-spacing:1.4px}
+#product-page-root .pp-back:hover{background:#f0d98c!important;color:var(--safa-ink)!important}
+/* Quantity controls: no wrapper frame; each control is its own pill. */
+.product-options .quantity-picker,.cart-qty{display:inline-flex!important;align-items:center!important;justify-content:flex-start!important;gap:8px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;padding:0!important;margin:0!important}
+.product-options .quantity-picker button,.cart-qty button{width:36px!important;height:36px!important;min-width:36px!important;padding:0!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;border:1px solid var(--safa-gold)!important;border-radius:999px!important;background:transparent!important;color:var(--safa-ink)!important;font-size:18px!important;line-height:1!important;box-shadow:none!important}
+.product-options .quantity-picker span,.cart-qty span{min-width:20px;text-align:center}
+/* Never crop product artwork into a circle. */
+.productimg,.productimg img,.pp-image-stage,.pp-main-image,.pp-thumb,.pp-thumb img,.pp-card-img,.pp-card-img img,.modalimg,.modalimg img,.thumb,.thumb img,.related-img,.related-img img{border-radius:0!important}
+.pp-thumb{padding:4px!important}
+.pp-main-image,.pp-thumb img,.pp-card-img img,.modalimg img,.thumb img,.related-img img{object-fit:contain}
+/* Uploaded hero logo stays an image with no decorative surface. */
+.hero-logo-control,.hero-logo-control:hover,.hero-logo-preview{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:none!important;padding:0!important;mix-blend-mode:normal!important}
+/* Product crash fallback. */
+.safa-crash-fallback{position:fixed;inset:0;z-index:2147483647;background:#faf8f2;display:grid;place-items:center;padding:28px;text-align:center;font-family:Manrope,Arial,sans-serif}
+.safa-crash-fallback__card{max-width:560px;width:100%;padding:48px 32px;border:1px solid #211f1b18;border-radius:0;background:#fff;box-shadow:0 20px 70px #211f1b18}
+.safa-crash-fallback__eyebrow{font-size:10px;letter-spacing:2px;color:#8b7751;font-weight:600}
+.safa-crash-fallback h1{font:500 52px/1 'Cormorant Garamond',Georgia,serif;color:#211f1b;margin:16px 0}
+.safa-crash-fallback p{color:#6f6a60;font-size:14px;line-height:1.7;margin:0 0 26px}
+.safa-crash-fallback button{padding:12px 20px!important}
+.safa-search-empty{grid-column:1/-1;margin:0}

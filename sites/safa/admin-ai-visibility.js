@@ -1,0 +1,1 @@
+(()=>{if(window.__SAFA_ADMIN_AI_VISIBILITY__)return;window.__SAFA_ADMIN_AI_VISIBILITY__=true;const hide=()=>{const admin=Boolean(document.querySelector('.admin-clean'));const ai=document.querySelector('.safa-ai-wrap');if(ai)ai.style.display=admin?'none':''};new MutationObserver(hide).observe(document.documentElement,{childList:true,subtree:true});hide()})();

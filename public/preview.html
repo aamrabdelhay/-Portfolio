@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>View-only copy</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body style="cursor:auto">
+  <div class="theater-bar">
+    <div><span>VIEW-ONLY COPY</span> · not the live website · scroll freely</div>
+    <a class="btn ghost" href="/#work" style="padding:8px 14px">Close</a>
+  </div>
+  <iframe id="frame" title="Preview"></iframe>
+  <script>
+    const map = {
+      elsharaby: { src: "/previews/elsharaby/", title: "El Sharaby Law — copy" },
+      hossam: { src: "/previews/hossam/", title: "Dr. Hossam Lotfy — copy" },
+      loutfi: { src: "/previews/loutfi/", title: "Loutfi Law Firm — copy" },
+      safa: { src: "/previews/safa/", title: "SAFA — copy" },
+    };
+    const id = location.pathname.split("/").pop();
+    const rec = map[id] || map.elsharaby;
+    document.title = rec.title;
+    document.getElementById("frame").src = rec.src;
+  </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amr Abd El-Hay — Portfolio</title>
+  <meta name="description" content="Portfolio of Amr Ahmed Kamal El-Din Abd El Hay — law student, mooter, coach, and website designer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader-mark">AA</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+
+  <header class="header" id="header">
+    <a class="brand" href="#top">AMR ABD EL-HAY</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#path">Path</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a class="key-btn" href="/admin" title="Admin" aria-label="Admin">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="8" cy="15" r="3.2"/>
+        <path d="M10.8 13.6 20 4.5M16.2 4.5h3.4V8"/>
+      </svg>
+    </a>
+  </header>
+
+  <div class="nav-sheet" id="sheet">
+    <a href="#about">About</a>
+    <a href="#path">Path</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+    <a href="/admin">Studio</a>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-grain"></div>
+      <div class="hero-inner">
+        <span class="eyebrow" data-fade>Portfolio · 2026</span>
+        <h1 data-fade>Amr Ahmed Kamal<br>El-Din Abd El Hay<span>Law · Advocacy · Digital Craft</span></h1>
+        <p class="arabic-name" data-fade>عمرو أحمد كمال الدين عبد الحي</p>
+        <p class="hero-lead" data-fade>Law Graduate — English Section.<br>Postgraduate Student. Advocacy, research, and digital craft.</p>
+        <div class="hero-actions" data-fade>
+          <a class="btn" href="#path">Explore the path</a>
+          <a class="btn ghost" href="#work">View websites</a>
+        </div>
+      </div>
+      <div class="scroll-hint">Scroll</div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">01 — About</span>
+          <h2 data-reveal>A law graduate,<br>and a maker of sites.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy" data-reveal>
+            <p>I train in advocacy the way I design: with structure, research, and care for how an argument — or a page — is received. Moot courts, internships, and student leadership sit beside a quieter craft: building websites for law offices and brands, as viewable copies of work I have already shipped.</p>
+            <p>This chamber collects the record. Every achievement can carry a photograph. New work can be added from a locked studio behind the key in the header.</p>
+          </div>
+          <div>
+            <div class="portrait" id="portrait" data-reveal>
+              <div class="portrait-empty">
+                <span>Your portrait</span>
+                <small>Upload it from the key — Admin</small>
+              </div>
+            </div>
+            <div class="about-meta" style="margin-top:18px">
+              <div class="meta-card" data-reveal>
+                <small>Education</small>
+                <strong>Law Graduate — English Section</strong>
+                <div style="margin-top:6px;color:var(--gold-soft)">Postgraduate Student</div>
+              </div>
+              <div class="meta-card" data-reveal>
+                <small>Practice</small>
+                <strong>Mooter · Coach · Legal Trainee</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="hairline" />
+
+    <section class="section" id="path">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">02 — The path</span>
+          <h2 data-reveal>Achievements, in sequence.</h2>
+        </div>
+        <div class="filters" id="filters"></div>
+        <div class="path" id="pathList"></div>
+      </div>
+    </section>
+
+    <hr class="hairline" />
+
+    <section class="section" id="study">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">03 — Formation</span>
+          <h2 data-reveal>Courses &amp; capabilities.</h2>
+        </div>
+        <div class="courses" id="courses"></div>
+        <div class="skill-cols" id="skills" style="margin-top:48px"></div>
+      </div>
+    </section>
+
+    <hr class="hairline" />
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">04 — Selected websites</span>
+          <h2 data-reveal>Source copies of sites I built.</h2>
+        </div>
+        <p data-reveal style="max-width:640px;color:rgba(246,241,230,.65);font-weight:300;margin:-40px 0 48px;line-height:1.7">Open each card to browse a running copy built from the original source code — not the live production domain.</p>
+        <div class="work-list" id="workList"></div>
+      </div>
+    </section>
+
+    <hr class="hairline" />
+
+    <section class="section contact" id="contact">
+      <div class="wrap contact-row">
+        <div>
+          <span class="eyebrow">05 — Contact</span>
+          <h2 data-reveal>Write, call,<br>or continue the record.</h2>
+        </div>
+        <div class="contact-cards" id="contactList" data-reveal></div>
+      </div>
+    </section>
+  </main>
+
+  <a class="wa-float" id="waFloat" href="https://wa.me/201153909979" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+
+  <footer>
+    <div class="foot-copy">
+      <span>© 2026 Amr Abd El-Hay</span>
+      <div class="foot-links" id="footLinks"></div>
+    </div>
+    <a class="key-btn" href="/admin" aria-label="Admin">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="8" cy="15" r="3.2"/>
+        <path d="M10.8 13.6 20 4.5M16.2 4.5h3.4V8"/>
+      </svg>
+    </a>
+  </footer>
+
+  <script src="/vendor/gsap.min.js"></script>
+  <script src="/vendor/ScrollTrigger.min.js"></script>
+  <script src="/vendor/lenis.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

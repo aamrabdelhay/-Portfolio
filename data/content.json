@@ -1,0 +1,204 @@
+{
+  "profile": {
+    "name": "Amr Ahmed Kamal El-Din Abd El Hay",
+    "shortName": "Amr Abd El-Hay",
+    "nameAr": "عمرو أحمد كمال الدين عبد الحي",
+    "title": "Law Graduate — English Section",
+    "subtitle": "Postgraduate Student",
+    "tagline": "Advocacy, legal research, and digital craft.",
+    "phone": "01153909979",
+    "whatsapp": "https://wa.me/qr/DZX5CNB5MCVNM1",
+    "email": "aamrabdelhay@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/amrabdelhay",
+    "linkedinLabel": "Amr Abd El-Hay",
+    "whatsappNumber": "https://wa.me/201153909979",
+    "photo": ""
+  },
+  "achievements": [
+    {
+      "id": "env-moot-2026",
+      "category": "Moot Court",
+      "title": "Environmental Law Moot Court Competition — 1st Edition 2026",
+      "role": "Mooter",
+      "dates": "July 2026 – Present",
+      "summary": "Participating in the first edition of the Environmental Law Moot Court Competition. Conducting legal research and developing legal writing and oral advocacy skills in English through a simulated environmental law dispute.",
+      "image": "/images/court.jpg",
+      "order": 1
+    },
+    {
+      "id": "hossam-trainee-2026",
+      "category": "Practice",
+      "title": "Hossam Lotfy Law Office",
+      "role": "Legal Trainee",
+      "dates": "August 2026 – September 2026",
+      "summary": "Completed practical legal training and gained exposure to legal research and professional legal practice.",
+      "image": "/images/office.jpg",
+      "order": 2
+    },
+    {
+      "id": "ahr-moot-2026",
+      "category": "Moot Court",
+      "title": "Arab Human Rights Moot Court Competition — 2nd Edition 2026",
+      "role": "Mooter",
+      "dates": "April 2026 – July 2026",
+      "summary": "Drafted legal memoranda and conducted advanced legal research in international human rights law. Prepared oral arguments and participated in simulated judicial proceedings before a moot court panel.",
+      "image": "/images/advocacy.jpg",
+      "order": 3
+    },
+    {
+      "id": "ip-moot-3-2026",
+      "category": "Coaching",
+      "title": "IP Moot Court Competition — 3rd Edition | The British University in Egypt (BUE)",
+      "role": "Coach",
+      "dates": "March 2026 – July 2026",
+      "summary": "Directed all training and preparation phases for the competitive team. Provided expert guidance on legal argumentation and oral advocacy.",
+      "image": "/images/coaching.jpg",
+      "order": 4
+    },
+    {
+      "id": "slm-2026",
+      "category": "Coaching",
+      "title": "SLM (Shalakany Litigation Moot Court) Competition",
+      "role": "Coach",
+      "dates": "February 2026 – August 2026",
+      "summary": "Led student preparation regarding legal research, memo writing, and oral advocacy.",
+      "image": "/images/research.jpg",
+      "order": 5
+    },
+    {
+      "id": "alc-exec-2025",
+      "category": "Leadership",
+      "title": "Arab Law Council (ALC)",
+      "role": "Executive Office Member",
+      "dates": "December 2025 – Present",
+      "summary": "Contributed to strategic planning and the coordination of council initiatives. Supported executive operations and event organization.",
+      "image": "/images/office.jpg",
+      "order": 6
+    },
+    {
+      "id": "siam7",
+      "category": "Moot Court",
+      "title": "7th SCCA International Arabic Moot (SIAM7)",
+      "role": "Mooter",
+      "dates": "August 2025 – February 2026",
+      "summary": "Selected to represent Capital University in the international arbitration moot organized by the Saudi Center for Commercial Arbitration.",
+      "image": "/images/court.jpg",
+      "order": 7
+    },
+    {
+      "id": "ip-moot-2-2025",
+      "category": "Coaching",
+      "title": "IP Moot Court Competition — 2nd Edition | The British University in Egypt (BUE)",
+      "role": "Coach",
+      "dates": "July 2025 – August 2025",
+      "summary": "Managed training and preparation programs for two teams. Provided comprehensive guidance on legal argumentation and oral advocacy techniques.",
+      "image": "/images/coaching.jpg",
+      "order": 8
+    },
+    {
+      "id": "alc-hr-2025",
+      "category": "Leadership",
+      "title": "Arab Law Council (ALC)",
+      "role": "Human Resources Specialist",
+      "dates": "April 2025 – December 2025",
+      "summary": "Managed recruitment processes and member engagement activities. Assisted in developing HR strategies to optimize team performance.",
+      "image": "/images/research.jpg",
+      "order": 9
+    },
+    {
+      "id": "siam6",
+      "category": "Moot Court",
+      "title": "6th SCCA International Arabic Moot (SIAM6)",
+      "role": "Mooter",
+      "dates": "August 2024 – January 2025",
+      "summary": "Developed advanced advocacy, legal research, and arbitral procedure skills through simulated dispute resolution.",
+      "image": "/images/advocacy.jpg",
+      "order": 10
+    },
+    {
+      "id": "elkhayat-2024",
+      "category": "Practice",
+      "title": "Elkhayat Law Office",
+      "role": "Legal Intern",
+      "dates": "August 2024 – September 2024",
+      "summary": "Conducted in-depth legal research to support case strategies. Assisted in the management of various criminal cases. Reviewed and drafted commercial sales contracts.",
+      "image": "/images/office.jpg",
+      "order": 11
+    },
+    {
+      "id": "sipa-2026",
+      "category": "Membership",
+      "title": "Scientific Intellectual Property Association (SIPA)",
+      "role": "Honorary Member",
+      "dates": "August 2026 – Present",
+      "summary": "Honorary membership recognizing contribution to intellectual property mooting and academic community.",
+      "image": "/images/advocacy.jpg",
+      "order": 12
+    }
+  ],
+  "courses": [
+    {
+      "title": "English Language Course",
+      "meta": "Cairo University · Sep 2023"
+    },
+    {
+      "title": "ICDL Training Course",
+      "meta": "Cairo University · Aug 2023 · Certified in Microsoft Office Suite"
+    },
+    {
+      "title": "Soft Skills Training Course",
+      "meta": "Cairo University · Jul 2023 · Communication & Teamwork"
+    }
+  ],
+  "skills": {
+    "legal": ["Legal Arbitration", "Moot Court Advocacy", "Legal Research", "Contract Drafting"],
+    "technical": ["Microsoft Office Suite", "Website Design and Development"],
+    "soft": ["Communication", "Teamwork", "Analytical Thinking", "Problem-Solving"]
+  },
+  "projects": [
+    {
+      "id": "elsharaby",
+      "name": "El Sharaby Law",
+      "nameAr": "الشرابي للقانون",
+      "kind": "Legal platform",
+      "year": "2026",
+      "summary": "منصة قانونية ثنائية اللغة (عربي/إنجليزي) بهوية أبيض وذهبي، مع جناح S.L.C للمووت كورت: تسجيل فرق، شجرة خروج حيّة، سجل عام، ولوحة إدارة.",
+      "stack": ["Vite", "React", "TypeScript"],
+      "embed": "/embed/elsharaby/",
+      "tone": "gold"
+    },
+    {
+      "id": "hossam",
+      "name": "Dr. Hossam Lotfy",
+      "nameAr": "مكتب د. حسام لطفي",
+      "kind": "Law office platform",
+      "year": "2026",
+      "summary": "منصة مكتب محاماة كاملة: قضايا، جلسات، محامون، فروع، مواعيد، ومساعد مكتبي — بهوية كحلي وذهبي.",
+      "stack": ["Next.js", "TypeScript", "Prisma"],
+      "embed": "/previews/hossam/",
+      "tone": "navy"
+    },
+    {
+      "id": "loutfi",
+      "name": "Loutfi Law Firm",
+      "nameAr": "مكتب لطفي للمحاماة",
+      "kind": "Firm website + CMS",
+      "year": "2026",
+      "summary": "موقع مكتب عربي (RTL) بهوية حبر وفحم: خدمات، أكاديميا، مقالات، تدريب، مواعيد، ولوحة إدارة للمحتوى.",
+      "stack": ["Next.js", "CMS"],
+      "embed": "/previews/loutfi/",
+      "tone": "ink"
+    },
+    {
+      "id": "safa",
+      "name": "SAFA",
+      "nameAr": "صافا",
+      "kind": "Luxury e-commerce",
+      "year": "2026",
+      "summary": "متجر إلكتروني لمستحضرات تجميل فاخرة: كتالوج، حقيبة، طلبات، وأرشيف إدارة للمنتجات والصور.",
+      "stack": ["React", "Vite", "Node"],
+      "embed": "/embed/safa/",
+      "tone": "blush"
+    }
+  ]
+}
