@@ -407,3 +407,36 @@ body{background:linear-gradient(180deg,#3f4145 0%,#34363a 100%);color:#fff}
 .btn{color:#111}.btn:hover{box-shadow:0 18px 40px -18px rgba(57,255,136,.38)}
 .meta-card,.course,.path-item{background:rgba(255,255,255,.035)}
 [data-reveal],.path-item,.work-card,.course,.skill-col,.contact-card,.meta-card{will-change:transform,opacity}
+
+/* Final mobile + control polish */
+.btn,.filter,.tag,.contact-card,.pill,.key-btn,.burger,.path-item,.course,.meta-card,.screen{border-radius:18px}
+.btn{border-radius:999px}
+.filter,.tag{border-radius:999px}
+.contact-card{border-radius:18px}
+.path-item,.course,.meta-card{border-radius:24px}
+.screen{border-radius:20px}
+.screen-viewport{overflow:hidden;touch-action:auto;-webkit-overflow-scrolling:touch}
+.screen iframe.showcase-iframe{touch-action:auto;-webkit-overflow-scrolling:touch}
+@media (max-width:900px){
+  body{background:linear-gradient(180deg,#292b2e 0%,#17191c 100%)}
+  .wrap{width:min(100% - 28px,1180px)}
+  .hero-inner{padding:120px 18px 80px}
+  .hero h1{font-size:clamp(34px,10vw,54px);line-height:1}
+  .hero-actions{gap:10px}
+  .btn{padding:13px 20px;font-size:10px}
+  .section{padding:70px 0}
+  .path-item{min-height:0}
+  .path-item .media,.path-item .media img{min-height:190px;height:190px}
+  .path-item .body{padding:24px}
+  .screen{height:68vh;min-height:430px;max-height:700px}
+  .work-card{gap:24px}
+  .work-copy{padding:0 4px}
+  .nav-sheet{padding:30px}
+  .nav-sheet a{font-size:28px}
+  footer{padding:24px 18px 34px;gap:20px}
+}
+@media (max-width:520px){
+  .screen{height:62vh;min-height:380px}
+  .screen-bar{flex-basis:34px;padding:0 10px}
+  .screen-note{font-size:8px;top:8px;right:8px}
+}
