@@ -93,14 +93,14 @@
     });
   }
 
-  const LIVE_PREVIEW_URLS = {
-    elsharaby: "https://elsharaby-law.vercel.app/",
-    hossam: "https://dr-hossam-lotfy-hw88.vercel.app/",
-    loutfi: "https://loutfifirm.vercel.app/",
-    safa: "https://safa-rosy.vercel.app/",
-    mo: "https://militaryvisitscu.com/"
+  const PREVIEW_URLS = {
+    elsharaby: "./previews/elsharaby/",
+    hossam: "./previews/hossam/",
+    loutfi: "./previews/loutfi/",
+    safa: "./previews/safa/",
+    mo: "./previews/mo/"
   };
-  const PREVIEW_BUILD = "20261003-3";
+  const PREVIEW_BUILD = "20261003-STATIC-1";
 
   let DATA = null;
   let activeFilter = "All";
@@ -181,13 +181,13 @@
     if (!el || !DATA) return;
     const projects = DATA.projects || [];
     el.innerHTML = projects.map((p) => {
-      const href = LIVE_PREVIEW_URLS[p.id] || p.liveUrl || p.embed || p.preview || "#";
+      const href = PREVIEW_URLS[p.id] || p.embed || p.preview || "#";
       return `
       <article class="work-card">
         <div class="screen">
           <div class="screen-bar">
             <i></i><i></i><i></i>
-            <span>${escapeHtml(p.name)} · LIVE · SCROLL ONLY</span>
+            <span>${escapeHtml(p.name)} · STATIC COPY · SCROLL ONLY</span>
           </div>
           <div class="screen-viewport">
             <iframe
@@ -200,7 +200,7 @@
               referrerpolicy="no-referrer"
               tabindex="-1">
             </iframe>
-            <div class="screen-note">LIVE SITE · SCROLL ONLY</div>
+            <div class="screen-note">STATIC COPY · SCROLL ONLY</div>
           </div>
         </div>
         <div class="work-copy">
