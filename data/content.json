@@ -182,7 +182,8 @@
         "TypeScript"
       ],
       "embed": "./previews/elsharaby/",
-      "tone": "gold"
+      "tone": "gold",
+      "liveUrl": "https://elsharaby-law.vercel.app/"
     },
     {
       "id": "hossam",
@@ -197,7 +198,8 @@
         "Prisma"
       ],
       "embed": "./previews/hossam/",
-      "tone": "navy"
+      "tone": "navy",
+      "liveUrl": "https://dr-hossam-lotfy-hw88.vercel.app/auth"
     },
     {
       "id": "loutfi",
@@ -211,7 +213,8 @@
         "CMS"
       ],
       "embed": "./previews/loutfi/",
-      "tone": "ink"
+      "tone": "ink",
+      "liveUrl": "https://loutfifirm.vercel.app/"
     },
     {
       "id": "safa",
@@ -226,7 +229,8 @@
         "Node"
       ],
       "embed": "./previews/safa/",
-      "tone": "blush"
+      "tone": "blush",
+      "liveUrl": "https://safa-rosy.vercel.app/"
     },
     {
       "id": "mo",
@@ -241,7 +245,8 @@
         "Express"
       ],
       "embed": "./previews/mo/",
-      "tone": "blue"
+      "tone": "blue",
+      "liveUrl": "https://militaryvisitscu.com/"
     }
   ]
 }
