@@ -1,6 +1,7 @@
 import { execFileSync, spawnSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import fs from "node:fs/promises";
+import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
@@ -29,14 +30,14 @@ function clone(url, dir) {
   run("git", ["clone", "--depth", "1", url, dir], root);
 }
 function lockHtml(file) {
-  let html = require("node:fs").readFileSync(file, "utf8");
+  let html = readFileSync(file, "utf8");
   const lock = `<style id="portfolio-static-lock">
 html{scroll-behavior:auto!important}
 a,button,input,select,textarea,[role="button"],[tabindex]{pointer-events:none!important;cursor:default!important}
 form{pointer-events:none!important}
 </style>`;
   html = html.includes("portfolio-static-lock") ? html : html.replace("</head>", lock + "</head>");
-  require("node:fs").writeFileSync(file, html, "utf8");
+  writeFileSync(file, html, "utf8");
 }
 
 await rm(tmp);
