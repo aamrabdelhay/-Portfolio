@@ -94,13 +94,13 @@
   }
 
   const PREVIEW_URLS = {
-    elsharaby: "./previews/elsharaby/",
+    elsharaby: "./sites/elsharaby/",
     hossam: "./previews/hossam/",
     loutfi: "./previews/loutfi/",
-    safa: "./previews/safa/",
+    safa: "./sites/safa/",
     mo: "./previews/mo/"
   };
-  const PREVIEW_BUILD = "20261003-STATIC-1";
+  const PREVIEW_BUILD = "20261003-STATIC-2";
 
   let DATA = null;
   let activeFilter = "All";
@@ -196,9 +196,8 @@
               title="${escapeHtml(p.name)}"
               loading="lazy"
               scrolling="yes"
-              sandbox="allow-scripts allow-same-origin"
               referrerpolicy="no-referrer"
-              tabindex="-1">
+              tabindex="0">
             </iframe>
             <div class="screen-note">STATIC COPY · SCROLL ONLY</div>
           </div>
