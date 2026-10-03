@@ -183,7 +183,8 @@
       ],
       "embed": "./previews/elsharaby/",
       "tone": "gold",
-      "liveUrl": "./previews/elsharaby/"
+      "liveUrl": "https://elsharaby-law.vercel.app/",
+      "sourceUrl": "https://elsharaby-law.vercel.app/"
     },
     {
       "id": "hossam",
@@ -199,7 +200,8 @@
       ],
       "embed": "./previews/hossam/",
       "tone": "navy",
-      "liveUrl": "./previews/hossam/"
+      "liveUrl": "https://dr-hossam-lotfy-hw88.vercel.app/",
+      "sourceUrl": "https://dr-hossam-lotfy-hw88.vercel.app/"
     },
     {
       "id": "loutfi",
@@ -214,7 +216,8 @@
       ],
       "embed": "./previews/loutfi/",
       "tone": "ink",
-      "liveUrl": "./previews/loutfi/"
+      "liveUrl": "https://loutfifirm.vercel.app/",
+      "sourceUrl": "https://loutfifirm.vercel.app/"
     },
     {
       "id": "safa",
@@ -230,7 +233,8 @@
       ],
       "embed": "./previews/safa/",
       "tone": "blush",
-      "liveUrl": "./previews/safa/"
+      "liveUrl": "https://safa-rosy.vercel.app/",
+      "sourceUrl": "https://safa-rosy.vercel.app/"
     },
     {
       "id": "mo",
@@ -246,7 +250,8 @@
       ],
       "embed": "./previews/mo/",
       "tone": "blue",
-      "liveUrl": "./previews/mo/"
+      "liveUrl": "https://mo-drab.vercel.app/",
+      "sourceUrl": "https://mo-drab.vercel.app/"
     }
   ]
 }
