@@ -94,7 +94,7 @@
     hossam: "./previews/hossam/index.html",
     loutfi: "./previews/loutfi/index.html",
     safa: "./previews/safa/index.html",
-    mo: "./previews/mo/"
+    mo: "./previews/mo/index.html"
   };
   const PREVIEW_BUILD = "20261003-STYLE-2";
 
