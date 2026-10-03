@@ -23,8 +23,18 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout
+      - name: Checkout portfolio
         uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Build source-driven showcases
+        env:
+          MO_READ_TOKEN: ${{ secrets.MO_READ_TOKEN }}
+        run: node scripts/build-showcases.mjs
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
