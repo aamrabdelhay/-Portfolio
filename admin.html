@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studio — Amr Abd El-Hay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="admin-body">
+  <div class="admin-wrap">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <a href="/" style="letter-spacing:.28em;font-size:11px;color:var(--gold)">← PORTFOLIO</a>
+      <button class="btn ghost hidden" id="logout">Sign out</button>
+    </div>
+    <h1>The key.</h1>
+    <p style="color:var(--muted);margin-top:-8px">Add achievements, attach a photograph, keep the record current.</p>
+
+    <div id="loginView" class="login-box">
+      <form id="loginForm">
+        <div class="field">
+          <label>Password</label>
+          <input type="password" id="password" autocomplete="current-password" required />
+        </div>
+        <p class="err" id="loginErr"></p>
+        <button class="btn" type="submit">Enter studio</button>
+      </form>
+    </div>
+
+    <div id="dashView" class="hidden">
+      <form id="photoForm" class="login-box" style="max-width:100%;margin:0 0 36px">
+        <h3 style="font-family:var(--serif);font-weight:500;margin-top:0">Portrait</h3>
+        <p style="color:var(--muted);margin-top:-8px">This photograph appears in the About section.</p>
+        <img id="portraitPrev" alt="" style="max-height:180px;display:none;margin-bottom:12px" />
+        <div class="field">
+          <label>Upload your photo</label>
+          <input type="file" id="portraitFile" accept="image/*" />
+        </div>
+        <button class="btn" type="submit">Save portrait</button>
+      </form>
+      <div class="admin-grid">
+        <form id="form">
+          <input type="hidden" id="editId" />
+          <div class="field"><label>Title</label><input id="title" required /></div>
+          <div class="field"><label>Role</label><input id="role" placeholder="Mooter, Coach, Legal Trainee…" /></div>
+          <div class="field"><label>Dates</label><input id="dates" placeholder="August 2026 – September 2026" /></div>
+          <div class="field">
+            <label>Category</label>
+            <select id="category">
+              <option>Moot Court</option>
+              <option>Practice</option>
+              <option>Coaching</option>
+              <option>Leadership</option>
+              <option>Membership</option>
+              <option>Web</option>
+            </select>
+          </div>
+          <div class="field"><label>Summary</label><textarea id="summary" rows="4"></textarea></div>
+          <div class="field">
+            <label>Photograph</label>
+            <input type="file" id="file" accept="image/*" />
+            <input type="hidden" id="image" />
+            <img id="previewImg" alt="" style="margin-top:8px;max-height:120px;display:none" />
+          </div>
+          <div class="field"><label>Order (smaller first)</label><input id="order" type="number" value="1" /></div>
+          <button class="btn" type="submit" id="saveBtn">Save achievement</button>
+          <button class="btn ghost" type="button" id="resetBtn">Clear form</button>
+        </form>
+        <div>
+          <h3 style="font-family:var(--serif);font-weight:500">On the path</h3>
+          <div id="list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

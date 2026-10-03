@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مكتب د. حسام لطفي — معاينة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --navy:#0A101D; --gold:#D4AF51; --ivory:#F4F6F9; }
+    * { box-sizing:border-box; margin:0; }
+    body { font-family: Cairo, sans-serif; background: var(--ivory); color: var(--navy); }
+    header { display:flex; justify-content:space-between; align-items:center; padding:18px 36px;
+      background: rgba(10,16,29,.92); color:#fff; position:sticky; top:12px; margin:12px; border-radius:26px; }
+    .logo { color: var(--gold); letter-spacing:.08em; font-weight:700; }
+    nav a { color:#e4e9f2; text-decoration:none; margin-right:18px; font-size:14px; }
+    .hero { min-height: 72vh; display:flex; align-items:center; padding: 64px 48px;
+      background: radial-gradient(700px 280px at 10% 0%, rgba(212,175,81,.2), transparent 55%), var(--navy); color:#fff; }
+    .hero small { color: var(--gold); letter-spacing:.28em; font-size:12px; }
+    h1 { font-size: clamp(32px, 5vw, 58px); margin: 10px 0 12px; font-weight:700; }
+    .en { font-family: "Cormorant Garamond", serif; color:#bcc8dd; font-size:20px; }
+    .hero p { max-width: 540px; line-height:1.9; color:#bcc8dd; margin: 16px 0 28px; }
+    .btn { background: var(--gold); color: var(--navy); padding: 12px 22px; text-decoration:none; font-weight:700; display:inline-block; }
+    .row { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; width:min(1100px, calc(100% - 48px)); margin: -40px auto 60px; }
+    .card { background:#fff; padding:24px; box-shadow: 0 16px 40px -16px rgba(5,8,15,.22); border-top: 2px solid var(--gold); }
+    .card h3 { margin-bottom:8px; }
+    .card p { color:#5B6B84; line-height:1.8; font-size:14px; }
+    footer { text-align:center; padding:32px; color:#5B6B84; font-size:12px; }
+    @media(max-width:800px){ .row{grid-template-columns:1fr} .hero{padding:48px 24px} nav{display:none} }
+  </style>
+</head>
+<body>
+  <div dir="ltr" style="position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:10px 18px;background:#070b14;color:#f6f1e6;font:12px/1.4 Cairo,sans-serif;letter-spacing:.08em">
+    <a href="/#work" style="color:#d4af51;text-decoration:none">← Back to portfolio</a>
+    <span style="color:#d4af51">VIEW-ONLY COPY</span>
+  </div>
+  <header>
+    <div class="logo">د. حسام لطفي</div>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">الخدمات</a>
+      <a href="#">الفروع</a>
+      <a href="#">تواصل</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div>
+      <small>مكتب محاماة</small>
+      <h1>مكتب الدكتور حسام لطفي للمحاماة</h1>
+      <div class="en">Dr. Hossam Lotfy Law Office</div>
+      <p>منصة مكتبية كاملة: القضايا، الجلسات، المحامون، المواعيد، والفروع — بهوية كحلي وذهبي تليق بالمكتب.</p>
+      <a class="btn" href="#">طلب موعد</a>
+    </div>
+  </section>
+  <section class="row">
+    <article class="card"><h3>القضايا والجلسات</h3><p>إدارة الملفات، أرشيف الأحداث، وتذكير بالمواعيد قبل الجلسة.</p></article>
+    <article class="card"><h3>الفروع</h3><p>لوحة لكل فرع، صلاحيات مستقلة، وإدارة مركزية للمكتب الرئيسي.</p></article>
+    <article class="card"><h3>المساعد المكتبي</h3><p>مساعد رقمي لجدولة المواعيد وتصنيف العملاء دون تعقيد.</p></article>
+  </section>
+  <footer>نسخة للعرض فقط · ليست الموقع الحي</footer>
+</body>
+</html>
