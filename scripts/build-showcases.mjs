@@ -137,6 +137,10 @@ for (const [id, url] of Object.entries(repos)) clone(url, path.join(tmp, id));
       writeFileSync(index, html, "utf8");
       lockHtml(index);
     }
+    if (moDir === path.join(root, "sources/mo")) {
+      await rm(path.join(moDir, "node_modules"));
+      await rm(path.join(moDir, "dist"));
+    }
   } else {
     console.log("[showcase] Vendored MO source is missing; keeping the tracked snapshot.");
     const index = path.join(root, "previews/mo/index.html");
